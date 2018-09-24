@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Buttonfunctionality from './components/buttonfunctionality'
 
 class App extends Component {
   state={
@@ -24,8 +24,9 @@ class App extends Component {
   render() {
     return (     
       <div className="App">
+       <Buttonfunctionality Increse="Increse"/>
          <div>{this.state.val}</div>       
-         <button onClick={this.Increse}>+</button>
+       
          <button onClick={this.Decrese}>-</button>
          <button onClick={this.Reset}>Reset</button>
       </div>
